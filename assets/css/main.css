@@ -2893,29 +2893,30 @@ input[type=color] {
     height: 470px;
   }
 }
+/* PENYESUAIAN UKURAN FONT JUDUL SLIDER */
 .it-slider-title {
-  font-size: 75px;
+  font-size: 60px; /* Diubah dari 75px */
   line-height: 1.1;
   color: var(--it-common-white);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .it-slider-title {
-    font-size: 62px;
+    font-size: 50px; /* Diubah dari 62px */
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-slider-title {
-    font-size: 50px;
+    font-size: 42px; /* Diubah dari 50px */
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .it-slider-title {
-    font-size: 40px;
+    font-size: 38px; /* Diubah dari 40px */
   }
 }
 @media (max-width: 767px) {
   .it-slider-title {
-    font-size: 30px;
+    font-size: 30px; /* Tetap 30px, sudah cukup kecil untuk HP */
   }
 }
 .it-slider-content-box {
@@ -9868,16 +9869,40 @@ td.product-thumbnail img {
   overflow: hidden;
 }
 .it-about-thumb img {
-  width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .it-about-award {
   position: absolute;
-  bottom: 2%;
-  left: 0;
+  bottom: 10px; /* Jarak dari bawah */
+  left: 0;   /* Jarak dari kiri */
   background-color: var(--it-theme-2);
-  padding: 24px 24px;
+  padding: 40px 24px;
   border-radius: 10px;
 }
+
+@media (max-width: 991px) {
+    .it-about-thumb-box {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .it-about-award {
+        /* Posisikan ulang di mobile agar tidak aneh */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        max-width: 300px;
+        text-align: center;
+    }
+     .it-about-new-stats h3 {
+        text-align: center;
+        font-size: 24px; /* Kecilkan sedikit di HP */
+    }
+}
+
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-about-award {
     bottom: 0;
@@ -11955,6 +11980,137 @@ td.product-thumbnail img {
   .it-copyright-2-text p {
     font-size: 14px;
   }
+}
+
+
+/* Kustomisasi untuk Statistik Mitra & Siswa (dengan ikon) */
+.it-about-new-stats-with-icon {
+    padding-left: 15x; /* Memberi jarak dari ikon piala */
+}
+
+.it-about-new-stats-with-icon h3 {
+    font-family: var(--it-ff-heading, 'DynaPuff', sans-serif);
+    font-size: 30px;      /* Sedikit dikecilkan agar seimbang dengan ikon */
+    color: white;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    text-align: left;
+}
+
+/* ======================================================== */
+/* MENAMBAH JARAK & MEMPERLEBAR SEKSI FASILITAS */
+/* ======================================================== */
+
+.it-service-area .row > .col {
+    padding-left: 20px;   /* Menambah jarak horizontal */
+    padding-right: 20px;  /* Menambah jarak horizontal */
+    margin-bottom: 30px !important; /* Menambah jarak vertikal saat di HP/tablet */
+}
+
+/* ======================================================== */
+/* KUSTOMISASI WARNA BACKGROUND FOOTER */
+/* ======================================================== */
+
+.it-footer-wrap {
+    background-color: #5f438a; /* <-- Ganti kode warna ini sesuai keinginan Anda */
+}
+
+
+/* ======================================================== */
+/* KUSTOMISASI UNTUK SLIDER LOGO MITRA */
+/* ======================================================== */
+
+.it-brand-section {
+    padding: 80px 0;
+    background-color: #ebe6f5; /* Warna latar belakang abu-abu muda */
+}
+
+.it-brand-title-box {
+    margin-bottom: 50px;
+}
+
+.it-brand-title-box .it-section-subtitle {
+    font-size: 20px;
+}
+
+.it-brand-title-box .it-section-title {
+    font-size: 40px;
+}
+
+.brand-active .single-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Tinggi seragam untuk setiap logo */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.brand-active .single-brand img {
+    max-width: 250px; /* Lebar maksimal logo */
+    max-height: 150px; /* Tinggi maksimal logo */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/* ======================================================== */
+/* TAMBAHAN RESPONSIVE UNTUK SLIDER LOGO MITRA */
+/* ======================================================== */
+
+/* Untuk layar Tablet (lebar di bawah 992px) */
+@media (max-width: 991px) {
+    .brand-active .single-brand {
+        height: 120px; /* Perkecil tinggi area slide */
+    }
+
+    .brand-active .single-brand img {
+        max-width: 180px; /* Perkecil ukuran logo */
+        max-height: 100px;
+    }
+}
+
+/* Untuk layar HP (lebar di bawah 767px) */
+@media (max-width: 767px) {
+    .brand-active .single-brand {
+        height: 100px; /* Perkecil lagi tinggi area slide */
+    }
+
+    .brand-active .single-brand img {
+        max-width: 140px; /* Perkecil lagi ukuran logo */
+        max-height: 80px;
+    }
+}
+
+
+/* ======================================================== */
+/* KUSTOMISASI BACKGROUND HEADER HALAMAN (BREADCRUMB) */
+/* ======================================================== */
+
+.it-breadcrumb-area {
+    background-image: url('../img/breadcrumb/slider-1-1.png'); /* <-- Ganti dengan path gambar Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.it-breadcrumb-area::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.it-breadcrumb-content {
+    position: relative;
+    z-index: 2;
 }
 
 /*# sourceMappingURL=main.css.map */

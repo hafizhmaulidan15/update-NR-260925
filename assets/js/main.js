@@ -745,7 +745,36 @@ $('#ship-box').on('click', function () {
 		  });
 		  $(this).removeAttr('data-mask-src');
 		});
-	  };
+	};
+	
+
+	////////////////////////////////////////////////////
+// 20. Brand Slider Activation
+var brand = new Swiper('.it-brand-slider', {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+    breakpoints: {
+        '1200': {
+            slidesPerView: 5,
+        },
+        '992': {
+            slidesPerView: 4,
+        },
+        '768': {
+            slidesPerView: 3,
+        },
+        '576': {
+            slidesPerView: 2,
+        },
+        '0': {
+            slidesPerView: 1,
+        },
+    },
+});
 
 
 })(jQuery);
