@@ -12113,4 +12113,18 @@ td.product-thumbnail img {
     z-index: 2;
 }
 
+
+/* ======================================================== */
+/* KUSTOMISASI UKURAN TOMBOL "BOOK FREE TRIAL" DI HEADER */
+/* ======================================================== */
+
+/* Menargetkan secara spesifik tombol di dalam header */
+.it-header-button .it-btn {
+    height: 65px;           /* Perbesar tinggi tombol dari 55px */
+    width: auto;
+    line-height: 65px;      /* Sesuaikan line-height agar teks tetap di tengah */
+    padding: 0 45px;        /* Tambah ruang di kiri dan kanan teks */
+    font-size: 20px;        /* Sedikit perbesar ukuran font */
+}
+
 /*# sourceMappingURL=main.css.map */
