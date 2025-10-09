@@ -31,14 +31,7 @@
 
 <body>
 
-   <!-- preloader -->
-   <div id="preloader">
-      <div class="preloader">
-         <span></span>
-         <span></span>
-      </div>
-   </div>
-   <!-- preloader end  -->
+   
 
    <!-- back-to-top-start  -->
    <button class="scroll-top scroll-to-target" data-target="html">
@@ -140,9 +133,7 @@
                                  </a>
                                  <ul class="it-submenu submenu">
                                     <li><a href="program.html">Program</a></li>
-                                    <li><a href="program-details.html">Program Details</a></li>
                                     <li><a href="event.html">Event</a></li>
-                                    <li><a href="event-details.html">Event Details</a></li>
                                  </ul>
                               </li>
                               <li class="has-dropdown">
@@ -166,18 +157,10 @@
                                     Retail
                                  </a>
                                  <ul class="it-submenu submenu">
-                                    <li><a href="price.html">Price</a></li>
                                     <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="faq.html">Faq</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
                                     <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                    <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
                                     <li><a href="instructor-registration.html">Instructor Registration</a></li>
                                     <li><a href="student-registration.html">Student Registration</a></li>
-                                    <li><a href="404.html">404</a></li>
                                  </ul>
                               </li>
                               <li class="has-dropdown">
@@ -462,7 +445,9 @@
                      <div class="it-about-info-wrap d-flex-wrap d-sm-flex align-items-center">
                         <div class="it-about-info-item  d-flex align-items-start">
                            <div class="it-about-info-icon">
-                              <span><i class="flaticon-phone-call"></i></span>
+                              <span>
+                                 <img src="assets/img/CS (1) (1).svg" alt="">
+                              </span>
                            </div>
                            <div class="it-about-info-text">
                               <h6>Informasi Lebih Lanjut</h6>
@@ -470,7 +455,9 @@
                         </div>
                         <div class="it-about-info-item  d-flex align-items-start">
                            <div class="it-about-info-icon">
-                              <span><i class="flaticon-phone-call"></i></span>
+                              <span>
+                                 <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                              </span>
                            </div>
                            <div class="it-about-info-text">
                               <h6><a href="https://wa.me/6287790005689">0877-9000-5689</a></h6>
@@ -847,69 +834,121 @@
       <!-- testimonial-area-end -->
 
 
-      <div class="it-brand-section">
-         <div class="container">
-            <div class="row">
-                  <div class="col-xl-12">
-                     <div class="it-brand-title-box text-center">
-                        <span class="it-section-subtitle">Telah Dipercaya oleh</span>
-                        <h3 class="it-section-title">Mitra Kami</h3>
-                     </div>
+   <div class="it-brand-section">
+
+      <style>
+        /* Style dasar untuk seksi slider */
+        .it-brand-section {
+            padding: 80px 0;
+            background-color: #ebe6f5;
+        }
+
+        .it-brand-title-box {
+            margin-bottom: 50px;
+        }
+
+        .it-brand-title-box .it-section-subtitle {
+            font-size: 20px;
+        }
+
+        .it-brand-title-box .it-section-title {
+            font-size: 40px;
+        }
+
+        /* --- PERUBAHAN DI SINI --- */
+        /* Ukuran untuk Desktop (Layar Besar) */
+        .it-brand-section .brand-active .single-brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            /* Menambah jarak di dalam slide */
+            padding: 10px; /* Diubah dari 10px menjadi 20px */
+        }
+
+        .it-brand-section .brand-active .single-brand img {
+            max-width: 100%;   /* Pastikan gambar tidak melebihi padding */
+            max-height: 100%;  /* Pastikan gambar tidak melebihi padding */
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            opacity: 1;
+            transition: all 0.3s ease;
+        }
+
+        /* --- ATURAN RESPONSIVE (TETAP SAMA) --- */
+        @media (max-width: 991px) {
+            .it-brand-section .brand-active .single-brand {
+                height: 120px;
+            }
+        }
+        @media (max-width: 767px) {
+            .it-brand-section .brand-active .single-brand {
+                height: 100px;
+            }
+        }
+    </style>
+
+      <div class="container">
+         <div class="row">
+               <div class="col-xl-12">
+                  <div class="it-brand-title-box text-center">
+                     <span class="it-section-subtitle">Telah Dipercaya oleh</span>
+                     <h3 class="it-section-title">Mitra Kami</h3>
                   </div>
-            </div>
-            <div class="row">
-                  <div class="col-xl-12">
-                     <div class="brand-active">
-                        <div class="swiper-container it-brand-slider"> <div class="swiper-wrapper">
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/Mizan.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/Mangga Dual Mall.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/Bina Bangsa.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/Botani Square.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/Farmers Market.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/Kesatuan.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/TSM Mall Cibubur.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/SA Al Giva.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/SDIT Al Ikhlas.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/SDIT Al Munawar.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/SDIT Kemuning.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/SI Ibnu Hajar.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/SMP Lazuardi.png" alt="Brand">
-                                 </div>
-                                 <div class="swiper-slide single-brand">
-                                    <img src="assets/img/brand/TSM Mall Cibubur.png" alt="Brand">
-                                 </div>                               
+               </div>
+         </div>
+         <div class="row">
+               <div class="col-xl-12">
+                  <div class="brand-active">
+                     <div class="swiper-container it-brand-slider">
+                           <div class="swiper-wrapper">
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/Mizan.png" alt="Brand">
                               </div>
-                        </div>
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/Bina Bangsa.png" alt="Brand">
+                              </div>
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/Botani Square.png" alt="Brand">
+                              </div>
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/Mangga Dual Mall.png" alt="Brand">
+                              </div>
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/Kesatuan.png" alt="Brand">
+                              </div>
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/TSM Mall Cibubur.png" alt="Brand">
+                              </div>
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/SA Al Giva.png" alt="Brand">
+                              </div>
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/SDIT Al Ikhlas.png" alt="Brand">
+                              </div>
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/SDIT Al Munawar.png" alt="Brand">
+                              </div>
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/SDIT Kemuning.png" alt="Brand">
+                              </div>
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/SI Ibnu Hajar.png" alt="Brand">
+                              </div>
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/SMP Lazuardi.png" alt="Brand">
+                              </div>
+                              <div class="swiper-slide single-brand">
+                                 <img src="assets/img/brand/Farmers Market.png" alt="Brand">
+                              </div>
+                           </div>
                      </div>
                   </div>
-            </div>
+               </div>
          </div>
       </div>
+   </div>
 
 
       <!-- funfact-area-start -->
@@ -1011,7 +1050,7 @@
                         </div>
                      </div>
                      <div class="it-team-content">
-                        <h4 class="it-team-title"><a href="teacher-details.html">Advance with Robot Exploration 11-13 tahun </a></h4>
+                        <h4 class="it-team-title"><a href="teacher-details.html">Advance with Robot Exploration <br> 11-13 tahun </a></h4>
                      </div>
                   </div>
                </div>
@@ -1023,7 +1062,7 @@
                         </div>
                      </div>
                      <div class="it-team-content">
-                        <h4 class="it-team-title"><a href="teacher-details.html">Super Advance with TechBot 14-15 tahun</a></h4>
+                        <h4 class="it-team-title"><a href="teacher-details.html">Super Advance with TechBot <br> 14-15 tahun</a></h4>
                      </div>
                   </div>
                </div>
@@ -1052,7 +1091,7 @@
                      </div>
                      <div class="it-choose-title-box mb-15">
                         <span class="it-section-subtitle text-white">Siapa Kami?</span>
-                        <h3 class="it-section-title text-white">Empowering Young Learners with 21st Century Skills</h3> 
+                        <h3 class="it-section-title text-white">Empowering Young Learners with 21 st Century Skills</h3> 
                      </div>
                      <div class="it-choose-text pb-5">
                         <p class="text-white">Di era penuh perubahan, anak-anak perlu lebih dari sekadar pengetahuan. 
@@ -1136,7 +1175,7 @@
                         </div>
                      </div>
                      <div class="it-team-content">
-                        <h4 class="it-team-title"><a href="teacher-details.html">Junior Coder <br>8-10 tahun </a></h4>
+                        <h4 class="it-team-title"><a href="teacher-details.html">Super Junior Coder <br>11-13 tahun </a></h4>
                      </div>
                   </div>
                </div>
@@ -1240,7 +1279,7 @@
                      </div>
                      <div class="it-shop-content-box">
                         <div class="it-shop-content">
-                           <h4 class="it-shop-title pb-15"><a href="shop-details.html">Kaos NanoRobotic</a></h4>
+                           <h4 class="it-shop-title pb-15"><a href="shop-details.html">Kaos <br> NanoRobotic</a></h4>
 
                            <div class="it-shop-button">
                               <a class="it-btn-sm circle-effect circle-effect" href="product-details.html">
@@ -1261,13 +1300,13 @@
                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
                   <div class="it-shop-item text-center">
                      <div class="it-shop-thumb p-relative">
-                        <img class="w-100" src="assets/img/shop/SHOP ITEM/2tumblr.png" alt="">                        
+                        <img class="w-100" src="assets/img/shop/SHOP ITEM/4mug.png" alt="">                        
                         <div class="it-shop-icon">      
                         </div>
                      </div>
                      <div class="it-shop-content-box">
                         <div class="it-shop-content">
-                           <h4 class="it-shop-title pb-15"><a href="shop-details.html">Tumblr Nanorobotic</a></h4>
+                           <h4 class="it-shop-title pb-15"><a href="shop-details.html">Mug <br> Nanorobotic</a></h4>
                            <div class="it-shop-button">
                               <a class="it-btn-sm circle-effect circle-effect" href="product-details.html">
                                  <span>Shop now
@@ -1287,11 +1326,11 @@
                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
                   <div class="it-shop-item text-center">
                      <div class="it-shop-thumb p-relative">
-                        <img class="w-100" src="assets/img/shop/SHOP ITEM/3keychain.png" alt="">
+                        <img class="w-100" src="assets/img/shop/SHOP ITEM/1.png" alt="">
                      </div>
                      <div class="it-shop-content-box">
                         <div class="it-shop-content">
-                           <h4 class="it-shop-title pb-15"><a href="shop-details.html">Keychain Nanorobotic</a></h4>
+                           <h4 class="it-shop-title pb-15"><a href="shop-details.html">Smart Kit Robotic <br> 4 in 1</a></h4>
                            <div class="it-shop-button">
                               <a class="it-btn-sm circle-effect" href="product-details.html">
                                  <span>Shop now
@@ -1311,11 +1350,11 @@
                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
                   <div class="it-shop-item text-center">
                      <div class="it-shop-thumb p-relative">
-                        <img class="w-100" src="assets/img/shop/SHOP ITEM/4mug.png" alt="">
+                        <img class="w-100" src="assets/img/shop/SHOP ITEM/4.png" alt="">
                      </div>
                      <div class="it-shop-content-box">
                         <div class="it-shop-content">
-                           <h4 class="it-shop-title pb-15"><a href="shop-details.html">Mug Nanorobotic</a></h4>
+                           <h4 class="it-shop-title pb-15"><a href="shop-details.html">Smart Coding Kit <br> for Early Age</a></h4>
                            <div class="it-shop-button">
                               <a class="it-btn-sm circle-effect" href="product-details.html">
                                  <span>Shop now
@@ -1369,7 +1408,7 @@
                         </div>
                         <div class="it-blog-content">
                            <div class="it-blog-meta mb-25">
-                              <span>08 May, 2023</span>
+                              <span>15 March, 2024</span>
                            </div>
                            <h4 class="it-blog-title pb-25"><a href="blog-details.html">STEAM: Kunci Melahirkan Generasi Kreatif, Kritis, dan Inovatif</a></h4>                
                         </div>
@@ -1396,7 +1435,7 @@
                         </div>
                         <div class="it-blog-content">
                            <div class="it-blog-meta mb-25">
-                              <span>08 May, 2023</span>
+                              <span>23 Feb, 2025</span>
                            </div>
                            <h4 class="it-blog-title pb-25"><a href="blog-details.html">Menjadi Orang Tua Bijak di Era Digital</a></h4>                
                         </div>
@@ -1435,7 +1474,7 @@
                <div class="row">
                   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-50 wow itfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
                      <div class="it-footer-widget footer-col-1">
-                        <div class="it-footer-logo pb-40">
+                        <div class="it-footer-logo pb-20">
                            <a href="index-html"><img src="assets/img/logo/logo-white.png" alt=""></a>
                         </div>
                         <div class="it-footer-text pb-15">
